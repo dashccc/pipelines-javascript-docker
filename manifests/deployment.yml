@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: dashcccpipelinesjavascriptdocker 
+        app: test-pipeline 
     spec:
       containers:
         - name: dashcccpipelinesjavascriptdocker 
