@@ -2,10 +2,13 @@ apiVersion : apps/v1
 kind: Deployment
 metadata:
   name: dashcccpipelinesjavascriptdocker 
+  labels:
+    app: test-pipeline
 spec:
-  selector:
-    name: kube-node-lease
   replicas: 1
+  selector:
+    matchLabels:
+      app: test-pipeline
   template:
     metadata:
       labels:
