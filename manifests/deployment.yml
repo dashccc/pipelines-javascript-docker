@@ -14,5 +14,5 @@ spec:
           image: mycontainerregistry2testdashpipelines.azurecr.io/dashcccpipelinesjavascriptdocker
           ports:
           - containerPort: 8080
-      selector:
-        name: kube-node-lease
+    selector:
+       name: kube-node-lease
